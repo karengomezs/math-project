@@ -1,0 +1,25 @@
+.content {
+    &__options {
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: center;
+    }
+    &__container {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+        min-width: 200px;
+        background-color: rgb(255, 211, 16);
+        border-radius: 10px;
+        &:hover {
+            @extend %background;
+        }
+    }
+}
+
+%background {
+    cursor: pointer;
+    background-color: white;
+}
