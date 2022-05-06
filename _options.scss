@@ -1,22 +1,93 @@
 .content {
-    &__options {
+    &__container {
         display: grid;
         grid-auto-flow: column;
         justify-items: center;
     }
-    &__container {
+    &__options {
         font-size: 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 200px;
         min-width: 200px;
-        background-color: rgb(255, 211, 16);
+        background-color: $yellowColor;
         border-radius: 10px;
         &:hover {
             @extend %background;
         }
     }
+    &__anchor {
+        text-decoration: none;
+    }
+    &__average {
+        min-height: 200px;
+        background-color: rgb(28, 80, 80);
+    }
+    &__median {
+        min-height: 200px;
+        background-color: rgb(84, 116, 116);
+    }
+    &__mode {
+        min-height: 200px;
+        background-color: rgb(9, 129, 129);
+    }
+}
+
+.section {
+    &__discount {
+        color: white;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        min-height: 500px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        * {
+            font-size: 1.5rem;
+        }
+        form {
+            border: 1px solid $yellowColor;
+            padding: 50px;
+            border-radius: 20px;
+        }
+    }
+    &__enounce {
+        text-align: center;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__input {
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        text-indent: 20px;
+        margin: 30px 0 30px 0;
+    }
+    &__button {
+        margin-top: 20px;
+        font-size: 1rem;
+        height: 50px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: $yellowColor;
+        border: none;
+        &:hover {
+            @extend %background;
+        }
+    }
+    &__value {
+        margin-top: 30px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 %background {
