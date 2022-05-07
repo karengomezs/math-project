@@ -35,7 +35,7 @@
 }
 
 .section {
-    &__discount {
+    &__section {
         color: white;
         margin-top: 10%;
         margin-bottom: 5%;
@@ -83,6 +83,7 @@
     }
     &__value {
         margin-top: 30px;
+        text-align: center;
     }
 }
 

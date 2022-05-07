@@ -38,8 +38,8 @@
     </div>
 
     <!-- maquetación descuentos -->
-    <div class="section__discount" id="discount">
-        <!-- <div class="section__div"> -->
+    <div class="section__section" id="discount">
+
         <form action="">
             <div class="section__enounce section__item">
                 <label for="inputPrice">
@@ -69,7 +69,7 @@
 
             <p class="section__value" id="resultP"></p>
         </form>
-        <!-- </div> -->
+
     </div>
 
 
@@ -83,12 +83,35 @@
 
     </div>
 
+    <!-- maquetación mediana -->
+    <div class="section__section" id="median">
+        <form action="">
+            <div class="section__enounce section__item">
+                <label for="">
+                    Escribe los datos, separalos con una coma o espacio
+                </label>
+            </div>
 
-    <div class="content__median" id="median">
+
+            <div class="section__item">
+                <input class="section__input" id="inputMediana">
+            </div>
+
+
+            <div class="section__item">
+                <button class="section__button" type="button" id="buttonMediana" onclick="buttonClick()">Calcular Mediana</button>
+            </div>
+
+            <p class="section__value" id="resultMediana"></p>
+
+        </form>
+
+
 
     </div>
 
-    <script src="math.js"></script>
+    <script src="./code/descuentos.js"></script>
+    <script src="./code/mediana.js"></script>
 </body>
 
 </html>

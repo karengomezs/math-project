@@ -84,7 +84,7 @@ body {
   background-color: #098181;
 }
 
-.section__discount {
+.section__section {
   color: white;
   margin-top: 10%;
   margin-bottom: 5%;
@@ -105,11 +105,11 @@ body {
           flex-direction: column;
 }
 
-.section__discount * {
+.section__section * {
   font-size: 1.5rem;
 }
 
-.section__discount form {
+.section__section form {
   border: 1px solid #ffd310;
   padding: 50px;
   border-radius: 20px;
@@ -151,6 +151,7 @@ body {
 
 .section__value {
   margin-top: 30px;
+  text-align: center;
 }
 
 html {
