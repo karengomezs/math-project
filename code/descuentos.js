@@ -1,7 +1,7 @@
 function calcularPrecioConDescuento(precio, descuento) {
     const porcentajeDescuentoCalculado = (100 - descuento) / 100; // /100 para que se ponga el 0.7 por ejemplo
     const precioConDescuento = (precio * porcentajeDescuentoCalculado);
-    debugger; // pausa acá, no procesa más
+    // debugger; // pausa acá, no procesa más
 
     return precioConDescuento;
 }

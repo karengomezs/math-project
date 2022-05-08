@@ -1,8 +1,6 @@
 const input = document.getElementById("inputPromedio");
-// const inputValue = input.value;
-const button = document.getElementById("buttonPromedio");
 
-function buttonClick() {
+function average() {
     const inputValue = input.value;
 
     const isComma = inputValue.includes(",");
@@ -21,7 +19,7 @@ function buttonClick() {
 input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         e.preventDefault();
-        buttonClick();
+        average();
     };
 
 });

@@ -115,6 +115,10 @@ body {
   border-radius: 20px;
 }
 
+.section__subtittle {
+  margin-bottom: 3%;
+}
+
 .section__enounce {
   text-align: center;
 }

@@ -1,9 +1,7 @@
-const input = document.getElementById("inputMediana");
-// const inputValue = input.value;
-const button = document.getElementById("buttonMediana");
+const inputMediana = document.getElementById("inputMediana");
 
-function buttonClick() {
-    const inputValue = input.value;
+function mediana() {
+    const inputValue = inputMediana.value;
 
     const isComma = inputValue.includes(",");
 
@@ -18,11 +16,11 @@ function buttonClick() {
 
 
 
-input.addEventListener("keydown", (e) => {
+inputMediana.addEventListener("keydown", (e) => {
 
     if (e.key === "Enter") {
         e.preventDefault();
-        buttonClick();
+        mediana();
     };
 });
 

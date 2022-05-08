@@ -39,6 +39,7 @@
 
     <!-- maquetación descuentos -->
     <div class="section__section" id="discount">
+        <h1 class="section__subtittle">CALCULATE DISCOUNT</h1>
 
         <form action="">
             <div class="section__enounce section__item">
@@ -68,14 +69,17 @@
             </div>
 
             <p class="section__value" id="resultP"></p>
-        </form>
 
+        </form>
     </div>
 
 
     <!-- maqutación promedio -->
     <div class="section__section" id="average">
+        <h1 class="section__subtittle">CALCULATE AVERAGE</h1>
+
         <form action="">
+
             <div class="section__enounce section__item">
                 <label for="">
                     Escribe los datos, separalos con una coma o espacio
@@ -89,23 +93,44 @@
 
 
             <div class="section__item">
-                <button class="section__button" type="button" id="buttonPromedio" onclick="buttonClick()">Calcular Promedio</button>
+                <button class="section__button" type="button" id="buttonPromedio" onclick="average()">Calcular Promedio</button>
             </div>
 
             <p class="section__value" id="resultPromedio"></p>
 
         </form>
-
-
     </div>
 
+    <!-- maquetación moda -->
+    <div class="section__section" id="mode">
+        <h1 class="section__subtittle">CALCULATE MODE</h1>
 
-    <div class="content__mode" id="mode">
+        <form action="">
+            <div class="section__enounce section__item">
+                <label for="">
+                    Escribe los datos, separalos con una coma o espacio
+                </label>
+            </div>
 
+
+            <div class="section__item">
+                <input class="section__input" id="inputMode">
+            </div>
+
+
+            <div class="section__item">
+                <button class="section__button" type="button" id="buttonModa" onclick="buttonClick()">Calcular Moda</button>
+            </div>
+
+            <p class="section__value" id="resultModa"></p>
+
+        </form>
     </div>
 
     <!-- maquetación mediana -->
     <div class="section__section" id="median">
+        <h1 class="section__subtittle">CALCULATE MEDIAN</h1>
+
         <form action="">
             <div class="section__enounce section__item">
                 <label for="">
@@ -120,18 +145,18 @@
 
 
             <div class="section__item">
-                <button class="section__button" type="button" id="buttonMediana" onclick="buttonClick()">Calcular Mediana</button>
+                <button class="section__button" type="button" id="buttonMediana" onclick="mediana()">Calcular Mediana</button>
             </div>
 
             <p class="section__value" id="resultMediana"></p>
 
         </form>
-
     </div>
 
     <script src="./code/descuentos.js"></script>
     <script src="./code/promedio.js"></script>
     <script src="./code/mediana.js"></script>
+    <script src="./code/moda.js"></script>
 </body>
 
 </html>
