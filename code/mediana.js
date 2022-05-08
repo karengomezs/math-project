@@ -1,18 +1,20 @@
 const inputMediana = document.getElementById("inputMediana");
 
+
+function convertToNumbers(value) {
+    const isComma = value.includes(",");
+    const separator = isComma ? "," : " " //si la primera var.. es true el primer valor es el que se toma, si no se toma el segundo valor del string
+    const stringList = value.split(separator);
+    return stringList.map(element => Number(element));
+};
+
 function mediana() {
     const inputValue = inputMediana.value;
-
-    const isComma = inputValue.includes(",");
-
-    const separator = isComma ? "," : " " //si la primera var.. es true el primer valor es el que se toma, si no se toma el segundo valor del string
-
-    const stringList = inputValue.split(separator);
-    const numberList = stringList.map(element => Number(element));
-    const mediana = calcularMediana(numberList);
+    const numbers = convertToNumbers(inputValue);
+    const mediana = calcularMediana(numbers);
     const resultMediana = document.getElementById("resultMediana")
     resultMediana.innerText = `La mediana entre tus datos es ${mediana}`
-}
+};
 
 
 

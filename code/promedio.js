@@ -3,13 +3,8 @@ const input = document.getElementById("inputPromedio");
 function average() {
     const inputValue = input.value;
 
-    const isComma = inputValue.includes(",");
-
-    const separator = isComma ? "," : " "
-
-    const stringList = inputValue.split(separator);
-    const numberList = stringList.map(element => Number(element));
-    const promedio = calcularPromedio(numberList);
+    const numbers = convertToNumbers(inputValue);
+    const promedio = calcularPromedio(numbers);
 
     const resultPromedio = document.getElementById("resultPromedio")
     resultPromedio.innerText = `El promedio entre tus datos es ${promedio}`

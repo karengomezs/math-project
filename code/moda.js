@@ -1,16 +1,10 @@
 const inputModa = document.getElementById("inputMode");
 
-function buttonClick() {
+function modeClick() {
 
     const inputValue = inputModa.value;
-
-    const isComma = inputValue.includes(",");
-    const separator = isComma ? "," : " ";
-
-    const stringList = inputValue.split(separator);
-    const numberList = stringList.map(element => Number(element));
-
-    const moda = mode(numberList);
+    const numbers = convertToNumbers(inputValue)
+    const moda = mode(numbers);
 
     const resultModa = document.getElementById("resultModa")
     resultModa.innerText = `La moda entre tus datos es ${moda}`
@@ -21,7 +15,7 @@ inputModa.addEventListener("keydown", (e) => {
     console.log("kjgv");
     if (e.key === "Enter") {
         e.preventDefault();
-        buttonClick();
+        modeClick();
     }
 });
 
