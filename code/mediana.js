@@ -5,8 +5,7 @@ const button = document.getElementById("buttonMediana");
 function buttonClick() {
     const inputValue = input.value;
 
-
-    const isComma = inputValue.includes(",")
+    const isComma = inputValue.includes(",");
 
     const separator = isComma ? "," : " " //si la primera var.. es true el primer valor es el que se toma, si no se toma el segundo valor del string
 
@@ -14,7 +13,7 @@ function buttonClick() {
     const numberList = stringList.map(element => Number(element));
     const mediana = calcularMediana(numberList);
     const resultMediana = document.getElementById("resultMediana")
-    resultMediana.innerText = `La mediana entre tus componentes es ${mediana}`
+    resultMediana.innerText = `La mediana entre tus datos es ${mediana}`
 }
 
 
@@ -23,9 +22,8 @@ input.addEventListener("keydown", (e) => {
 
     if (e.key === "Enter") {
         e.preventDefault();
-        buttonClick()
+        buttonClick();
     };
-
 });
 
 
